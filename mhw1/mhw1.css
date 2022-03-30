@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-size: 10px;
+}
+
+@media (max-width: 500px) {
+  body {
+    font-size: 5px;  /*qui cambio font-size perchè altrimenti avrei valori troppo grandi per mobile*/
+  }
+}
+
+/*codice css per gestire l'header*/
+
+header {
+  font-family: "Montserrat", sans-serif, "Times New Roman", Times, serif;
+  color: white;
+  height: 75vh;
+  background-image: url(./header_background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#overlay {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+#header_wrapper {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header_wrapper nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  height: 170px;
+  width: 350px;
+}
+
+@media (max-width: 500px) {
+  #logo {           /*qui cambio dimensioni massime del logo cosi si riduce se serve*/
+    max-width: 170px;
+    max-height: 80px;
+  }
+}
+
+#links a {
+  margin: 20px;
+  font-size: 1.8em; /*18px*/
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 20px;
+  color: white;
+  text-decoration: none;
+  border: 2px solid white;
+  border-radius: 100px;
+}
+
+#links a:hover {
+  background-color: tan;
+}
+
+#menu {
+  display: none;
+}
+
+#menu div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 20px;
+}
+
+@media (max-width: 500px) {     /*questa media query l'abbiamo vista a lezione*/
+  
+  #links {    /* qui faccio in modo che i link non compaiano*/
+    display: none;
+  }
+
+  #menu {/*qui faccio in modo invece che le tre barre orizzontali bianche vengano visualizzate*/
+    display: block;
+  }
+}
+
+#header_wrapper h1 {
+  text-align: center;
+  line-height: 1.2;
+  max-width: 85vw;
+  font-size: 2em; /*20px*/
+}
+
+#header_wrapper h1 strong {
+  text-transform: uppercase;
+  font-size: 2.5em; /*50px e metto 2.5 perchè devo riferirmi a h1 adesso*/
+}
+
+#vs_icon {
+  height: 200px;
+  width: 200px;
+  margin-bottom: -100px;
+  border-radius: 125px;
+  border: 2px solid white;
+}
+
+@media (max-width: 500px) {
+  
+  #vs_icon{
+    margin-bottom: -50px; /*qui cambio perchè devo tener conto delle nuove dimensioni*/
+  }
+
+}
+
+
+/*codice css per gestire l article*/
+
+article {
+  font-family: "Montserrat", sans-serif, Arial, Helvetica, sans-serif;
+  padding-top: 180px;
+  padding-bottom:200px;
+  background-color: tan;
+}
+
+#section_1,
+#section_2,
+#section_3,
+#section_4,
+#section_5 {
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 500px) {
+  
+  #section_5{
+    margin-bottom: 0px;
+  }
+}
+
+.left {
+  width: 100px;
+  height: 100px;
+  background-color: tomato;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left h1 {
+  font-family: "Abril Fatface", cursive;
+  font-size: 7.5em; /*75px*/
+}
+
+.nastro {
+  background-color: rgb(166, 215, 235);
+  width: 4%;
+  margin-left: 1%;
+}
+
+.right {
+  width: 55%;
+  margin-left: 1%;
+}
+
+.right h1 {
+  font-size: 4em; /*40px*/
+  margin-bottom: 50px;
+}
+
+.right p {
+  margin-top: 50px;
+  font-size: 2.1em; /*21px*/
+  line-height: 2.5;
+}
+
+.right p a {
+  font-weight: bold;
+  font-style: italic;
+  color: black;
+  text-decoration: none;
+  text-decoration: underline;
+}
+
+.centered {
+  text-align: center;
+}
+
+.dim_img {
+  width: 250px;
+  height: 250px;
+}
+
+
+/*codice css per gestire l'about me*/
+
+#about_me{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#about_me h1{
+  text-transform: uppercase;
+  font-family: "Permanent Marker", cursive;
+  font-size: 5em; /*50px*/
+}
+
+#about_me p {
+  font-style: italic;
+  font-family: monospace;
+  font-size: 2.2em; /*22px*/
+  width: 40%;
+  line-height: 1.3;
+  margin: 20px;
+}
+
+#user_icon{
+  margin-top: -125px;
+  border-radius: 125px;
+  border: 2px solid white;
+}
+
+@media (max-width: 500px) {
+  
+  #user_icon{
+    margin-top: -50px;  /*qui cambio perchè devo tener conto delle nuove dimensioni*/
+  }
+} 
+
+/*codice css per gestire il footer*/
+
+footer{
+  margin-top: 50px;
+  background-color: black;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#github_icon {
+  width: 50px;
+  height: 50px;
+  border: 2px solid white;
+  border-radius: 25px;
+}
+
+#powered {
+  font-size: 1.7em; /*17px*/
+  margin-left: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+footer a:hover {
+  background-color: white;
+}
+
+/*altre media queries*/
+
+@media (max-width: 500px) {
+  .resize_img {
+    /*qui imposto le dimensioni massime cosi se serve l'mmagine si restringe*/
+    max-width: 100px;
+    max-height: 100px;
+  }
+  #about_me p {
+    width: 60% /*aumento width del paragrafo altrimenti avrei troppo poco spazio*/
+  }
+}
