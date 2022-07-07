@@ -192,5 +192,5 @@ In particolare, è richiesto l’utilizzo di API REST sia da PHP (ad esempio, pe
 - **In generale, sarà oggetto di valutazione l’uso di richieste asincrone tramite JavaScript al posto di ricaricamenti della pagina.**
 
 ## Homework 2
-> Porting HomeWork 1 in MVC
+> Porting HomeWork 1 in LARAVEL
 -->
